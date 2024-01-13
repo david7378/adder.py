@@ -2,7 +2,6 @@ pipeline {
     agent {
         dockerfile {
             label 'docker'
-            filename 'my.dockerfile'
         }
     }
     stages {
@@ -18,7 +17,7 @@ pipeline {
         }
         stage('Unit test') {
             steps {
-                 sh '''python3 -m pytest \
+                sh '''python3 -m pytest \
                     -v --junitxml=junit.xml \
                     --cov-report xml --cov adder adder.py
                 '''
