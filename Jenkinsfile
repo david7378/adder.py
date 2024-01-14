@@ -8,7 +8,7 @@ pipeline {
         stage('Compile') {
             steps {
                 sh 'python3 -m compileall adder.py'
-                sh 'echo "Compiled3"'
+                sh 'echo "Compiled4"'
 
             }
         }
