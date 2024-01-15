@@ -8,7 +8,7 @@ pipeline {
         stage('Compile') {
             steps {
                 sh 'python3 -m compileall adder.py'
-                sh 'echo "BOEING 737"'
+                sh 'echo "BOEING 747-800 CATHAY"'
 
             }
         }
