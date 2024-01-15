@@ -31,6 +31,20 @@ pipeline {
                 sh 'echo "After unit test!"'
             }
         }
+        stage('Build Deploy Code') {
+            when {
+                branch 'main'
+            }
+            steps {
+                sh """
+                echo "Building Artifact"
+                """
+
+                sh """
+                echo "Deploying Code"
+                """
+            }
+        }
     }
     post {
         always {
