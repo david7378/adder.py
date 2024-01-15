@@ -15,7 +15,7 @@ pipeline {
         stage('Run') {
             steps {
                 sh 'python3 adder.py 3 5'
-                sh 'echo "Boeing7"'
+                sh 'echo "I CAN DO WHATEVER I IMAGINE, JUST BELIEVE!"'
             }
         }
         stage('Unit test') {
