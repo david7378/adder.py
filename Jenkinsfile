@@ -15,7 +15,7 @@ pipeline {
         stage('Run') {
             steps {
                 sh 'python3 adder.py 3 5'
-                sh 'echo "Boeing737200"'
+                sh 'echo "Boeing7"'
             }
         }
         stage('Unit test') {
