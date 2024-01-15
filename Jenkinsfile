@@ -37,11 +37,11 @@ pipeline {
             }
             steps {
                 sh """
-                echo "Building Artifact"
+                echo "Building Artifact..."
                 """
 
                 sh """
-                echo "Deploying Code"
+                echo "Deploying Code!"
                 """
             }
         }
