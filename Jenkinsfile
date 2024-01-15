@@ -26,6 +26,11 @@ pipeline {
                 '''
             }
         }
+        stage('After unit test') {
+            steps {
+                sh 'echo "After unit test!"'
+            }
+        }
     }
     post {
         always {
