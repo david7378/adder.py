@@ -8,14 +8,14 @@ pipeline {
         stage('Compile') {
             steps {
                 sh 'python3 -m compileall adder.py'
-                sh 'echo "BOEING 747-800 CATHAY"'
+                sh 'echo "BOEING 747-800ER CATHAY"'
 
             }
         }
         stage('Run') {
             steps {
                 sh 'python3 adder.py 3 5'
-                sh 'echo "I CAN DO WHATEVER I IMAGINE, JUST BELIEVE!"'
+                sh 'echo "I CAN DO WHATEVER I IMAGINE!"'
             }
         }
         stage('Unit test') {
